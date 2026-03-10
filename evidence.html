@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raedan Peters | Evidence and Lab Setup</title>
+  <style>
+    :root {
+      --bg: #050816;
+      --bg2: #0a1024;
+      --panel: rgba(10, 16, 36, 0.88);
+      --text: #e6f1ff;
+      --muted: #94a3b8;
+      --accent: #00f5d4;
+      --border: rgba(0, 245, 212, 0.18);
+      --glow: 0 0 24px rgba(0, 245, 212, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(0, 245, 212, 0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(5, 8, 22, 0.88);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 90px 0 50px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      margin-bottom: 16px;
+      line-height: 1.08;
+      max-width: 900px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glow);
+      border-color: rgba(0, 245, 212, 0.35);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #031018;
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    section {
+      padding: 44px 0;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--glow);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 10px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      background: rgba(0, 245, 212, 0.08);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 30px 0 50px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    a.inline-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Raedan Peters</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#lab">Lab</a>
+          <a href="#mobile">Mobile Lab</a>
+          <a href="#proof">Proof</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Evidence, Platforms, and Lab Setup</h1>
+        <p>
+          This page documents the tools, platforms, lab systems, and active learning environments I use as part of my cybersecurity journey. It is designed to show practical evidence of progress, technical setup, and hands-on development.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#proof">View Evidence</a>
+          <a class="btn btn-secondary" href="index.html">Back to Homepage</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="platforms">
+      <div class="container">
+        <h2>Tools and Platforms</h2>
+        <p class="section-intro">
+          These are the main platforms and tools currently shaping my learning, documentation, and hands-on cybersecurity workflow.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>TryHackMe</h3>
+            <p>Used for structured learning, guided labs, and foundational cybersecurity progression.</p>
+          </div>
+          <div class="card">
+            <h3>GitHub</h3>
+            <p>Used to publish my portfolio, store write-ups, and show visible proof of learning and project work.</p>
+          </div>
+          <div class="card">
+            <h3>Obsidian</h3>
+            <p>Used for structured note-taking, lab documentation, and organizing formal technical notes.</p>
+          </div>
+          <div class="card">
+            <h3>VirtualBox</h3>
+            <p>Used to run lab systems and support virtualized cybersecurity learning environments.</p>
+          </div>
+          <div class="card">
+            <h3>Linux / Kali</h3>
+            <p>Used for terminal familiarity, lab tooling, security workflow exposure, and practical hands-on learning.</p>
+          </div>
+          <div class="card">
+            <h3>Notepad++ / HTML / CSS</h3>
+            <p>Used to build and edit portfolio sites manually while learning basic web structure and styling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="container">
+        <h2>Home Lab Setup</h2>
+        <p class="section-intro">
+          My home lab is being developed as a practical learning environment for networking, virtual systems, cybersecurity tooling, and documented experimentation.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Main Host System</h3>
+            <p>My main machine is used for portfolio work, study, virtualization, and lab management.</p>
+            <ul>
+              <li>Main host for VirtualBox and cybersecurity study</li>
+              <li>Used for documentation, GitHub, and lab workflow</li>
+              <li>Supports practical learning and environment management</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Virtual Lab Environment</h3>
+            <p>Virtual systems are used to support Linux familiarity, tool usage, and network-related learning.</p>
+            <ul>
+              <li>Kali virtual machine setup</li>
+              <li>Guest Additions and fullscreen workflow configured</li>
+              <li>Used as a stable platform for ongoing lab growth</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Documentation Workflow</h3>
+            <p>The lab is tied directly to a documentation-first process so that learning becomes visible proof of work.</p>
+            <ul>
+              <li>Formal notes prepared for Obsidian and GitHub</li>
+              <li>Personal study notes written separately by hand</li>
+              <li>Portfolio-first approach to learning progress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobile">
+      <div class="container">
+        <h2>Mobile Lab Platform</h2>
+        <p class="section-intro">
+          I also use a rooted Android device as part of my mobile cybersecurity lab path. This setup supports experimentation, Linux-related mobile tooling, and future defensive tool expansion.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Rooted Android Lab Device</h3>
+            <p>A Samsung S20 FE is being used as both a personal device and a mobile cybersecurity lab platform.</p>
+            <ul>
+              <li>Custom firmware / ROM work completed as part of the device journey</li>
+              <li>Root access enabled for deeper lab configuration</li>
+              <li>Used as a practical mobile cyber learning platform</li>
+            </ul>
+            <span class="status">Stable and usable</span>
+          </div>
+
+          <div class="card">
+            <h3>Mobile Linux / NetHunter Progress</h3>
+            <p>The device is partway through a larger Linux and NetHunter setup path focused on expanding practical mobile capability.</p>
+            <ul>
+              <li>Approximately 75 to 80 percent toward the full mobile Linux goal</li>
+              <li>Some modules working, some still incomplete</li>
+              <li>Further defensive tooling planned later</li>
+            </ul>
+            <span class="status">Partially operational</span>
+          </div>
+
+          <div class="card">
+            <h3>Current Mobile Status</h3>
+            <p>The phone is now stable enough to serve both as a lab tool and as a daily-use device.</p>
+            <ul>
+              <li>Termux currently broken</li>
+              <li>Device stability has improved significantly</li>
+              <li>Acts as both a personal device and lab platform</li>
+            </ul>
+            <span class="status">Active development platform</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="container">
+        <h2>Visible Proof and Progress</h2>
+        <p class="section-intro">
+          This section highlights the public-facing work and evidence trail I am actively building as part of my cybersecurity journey.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Published Portfolio Website</h3>
+            <p>My first GitHub Pages portfolio website has been built and published as a live public project.</p>
+            <p><a class="inline-link" href="https://github.com/RaedanCyber" target="_blank">View GitHub Profile</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Lab Documentation System</h3>
+            <p>I have built a workflow for turning lab work into structured notes, write-ups, and public portfolio evidence.</p>
+          </div>
+
+          <div class="card">
+            <h3>Current Study Direction</h3>
+            <p>My active learning path includes Pre Security, foundational networking, Linux familiarity, documentation, and home lab growth.</p>
+          </div>
+
+          <div class="card">
+            <h3>Business and Brand Concepts</h3>
+            <p>I have also started building early business and brand concepts linked to long-term cybersecurity growth and future ventures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Raedan Peters. Evidence page for platforms, lab progress, and visible cybersecurity growth.</p>
+    </div>
+  </footer>
+</body>
+</html>
