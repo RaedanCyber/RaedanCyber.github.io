@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raedan Peters | Cybersecurity Portfolio and Lab Documentation</title>
+  <style>
+    :root {
+      --bg: #050816;
+      --bg2: #0a1024;
+      --panel: rgba(10, 16, 36, 0.85);
+      --text: #e6f1ff;
+      --muted: #94a3b8;
+      --accent: #00f5d4;
+      --accent-soft: rgba(0, 245, 212, 0.12);
+      --border: rgba(0, 245, 212, 0.18);
+      --glow: 0 0 24px rgba(0, 245, 212, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(0, 245, 212, 0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(5, 8, 22, 0.88);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 100px 0 70px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      margin-bottom: 16px;
+      line-height: 1.08;
+      max-width: 900px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-size: 1.05rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glow);
+      border-color: rgba(0, 245, 212, 0.35);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #031018;
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    section {
+      padding: 52px 0;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--glow);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    footer {
+      padding: 30px 0 50px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Raedan Peters</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Cybersecurity Portfolio and Lab Documentation</h1>
+        <p>
+          I am documenting my cybersecurity learning journey through labs, write-ups, and hands-on projects focused on practical growth, portfolio building, and real-world readiness. This site is the foundation of that portfolio as I build toward a long-term career in cybersecurity.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="https://github.com/RaedanCyber" target="_blank">GitHub</a>
+          <a class="btn btn-secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>
+            I am building my path into cybersecurity through hands-on labs, structured documentation, and steady skill development. This portfolio is where I track that journey through practical work, lab write-ups, and projects that reflect both my curiosity and commitment to mastering the field.
+          </p>
+          <p style="margin-top: 14px;">
+            My focus is on building real ability, not just collecting theory. I am developing a strong foundation in networking, security tools, lab environments, and technical documentation while preparing for deeper study and more advanced cybersecurity work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Pre Security Write-Ups</h3>
+            <p>Documented notes and write-ups covering foundational cybersecurity labs, concepts, and early technical learning.</p>
+          </div>
+          <div class="card">
+            <h3>Home Cyber Lab Build</h3>
+            <p>My evolving home lab environment used to learn networking, security tooling, system setup, and controlled hands-on practice.</p>
+          </div>
+          <div class="card">
+            <h3>TryHackMe Learning Journey</h3>
+            <p>Ongoing practical learning through guided rooms, write-ups, and steady progression in core cybersecurity skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills in Progress</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Networking Fundamentals</h3>
+            <ul>
+              <li>IP addressing and subnet basics</li>
+              <li>Core network protocols and services</li>
+              <li>Lab connectivity and troubleshooting</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Security Tooling</h3>
+            <ul>
+              <li>Nmap and Kali Linux basics</li>
+              <li>Hands-on lab setup workflows</li>
+              <li>Practical security learning environments</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technical Documentation</h3>
+            <ul>
+              <li>Obsidian lab notes and structure</li>
+              <li>GitHub portfolio write-ups</li>
+              <li>Clear summaries of hands-on learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>GitHub: <a href="https://github.com/RaedanCyber" target="_blank" style="color: var(--accent); text-decoration: none;">github.com/RaedanCyber</a></p>
+          <p style="margin-top: 10px;">Email: <a href="mailto:petersriskgroup@gmail.com" style="color: var(--accent); text-decoration: none;">petersriskgroup@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Raedan Peters. Built to document my cybersecurity growth, labs, and practical skill development.</p>
+    </div>
+  </footer>
+</body>
+</html>
