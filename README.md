@@ -4,42 +4,46 @@
 
 Johannesburg, Gauteng · [Portfolio](https://raedancyber.github.io/) · [LinkedIn](https://www.linkedin.com/in/raedanpeters/) · [Email](mailto:petersraedan@gmail.com)
 
-I am currently completing an **NQF Level 5 Occupational Certificate in Cybersecurity** while building practical experience across Linux administration, software development, networking, cybersecurity labs, AI automation, storage, and embedded systems.
+I am currently completing an **NQF Level 5 Occupational Certificate in Cybersecurity** while building practical experience across Linux administration, software development, networking, cybersecurity labs, AI automation, storage and embedded systems.
 
-My work is centred on building real systems, troubleshooting them across layers, and documenting what I learn. This repository hosts the public-facing version of my technical portfolio.
+Most of my learning comes from building and operating things myself: servers, development tooling, security labs, automation systems and hardware projects.
 
 ## Featured work
 
 ### Self-Hosted Linux Infrastructure — Operational
-Ubuntu Server environment used for development, storage, networking, containerised services and remote administration. Practical work includes Docker, SSH, Linux users/groups and permissions, Samba, WireGuard, mounted storage and multi-user access design.
+Ubuntu Server environment used for development, storage, networking, service hosting and remote administration. Work includes Docker, SSH, users/groups, permissions, Samba, WireGuard, mounted storage and multi-user access design.
 
-### Application Development Experience — Ongoing
-Confidential project work has given me practical exposure to **Java, Spring Boot, Maven, SQL, Git, Docker and mobile/application development workflows**. Public material focuses on development methods and engineering practices rather than project names, product details or internal implementation.
+### Application Development — Ongoing
+Practical work across **Java, Spring Boot, Maven, SQL, Git, Docker and Flutter/mobile workflows**, including APIs, persistence, testing, builds, source control and environment management.
 
-### AI Development Automation — Ongoing
-Python-based development orchestration work involving project discovery, CLI workflows, model/provider routing, state management, controlled tool execution, reporting, evidence collection and pre-request quota enforcement.
+### DevBot — Ongoing
+Python software-engineering control plane for project discovery, planning, implementation, validation, review and build workflows. It uses bounded execution, trusted command adapters, rollback controls, provider routing and usage limits.
+
+### Rae-I — Ongoing
+Personal AI/orchestration platform built around a persistent Linux server. The system is being developed to coordinate tools, devices, specialist agents and automation while keeping execution permissions controlled.
+
+### Atlas — Ongoing
+Local cybersecurity orchestration service for authorised lab and bug-bounty workflows. Atlas handles scope, policy, evidence, approvals and structured security work instead of handing unrestricted execution to a model.
 
 ### Authorised Cybersecurity Home Lab — Active
-Isolated lab environment used for controlled security training with **Kali Linux, Nmap, wireless testing, Android/NetHunter, dedicated test devices and networking equipment**. Work includes service enumeration, OS fingerprinting, monitor mode, packet injection and controlled IEEE 802.11 testing on owned infrastructure.
+Isolated environment used for controlled security training with **Kali Linux, Nmap, wireless testing, Android/NetHunter, dedicated test devices and networking equipment**.
 
 ### Native Kali Linux Hardware Conversion — Completed
-Repurposed a low-resource Chromebook-class device into a native Kali Linux command-line workstation, including firmware/boot work, Linux installation, hardware compatibility and external wireless/Bluetooth integration.
+Repurposed a low-resource Chromebook-class device into a native Kali Linux command-line workstation, including firmware/boot work and wireless/Bluetooth integration.
 
 ### Storage & Data Operations — Completed / Ongoing
-Hands-on storage benchmarking, organisation and migration work across SSD/HDD systems. One guarded migration copied approximately **66,200 files / 117 GB**, skipped approximately **186,000 existing files / 215 GB**, and completed the verified run with no reported mismatches or failed copies.
+Hands-on storage benchmarking, organisation and migration work across SSD/HDD systems, including a verified large-file-count migration and cleanup work.
 
 ## Core technologies
 
-`Linux` `Ubuntu Server` `Kali Linux` `Python` `Java` `Spring Boot` `SQL` `Git` `Docker` `Docker Compose` `WireGuard` `Samba` `Nmap` `Aircrack-ng` `Bash` `PowerShell` `Ollama` `Open WebUI` `ESP32` `Arduino`
+`Linux` `Ubuntu Server` `Kali Linux` `Python` `Java` `Spring Boot` `SQL` `Git` `Docker` `Docker Compose` `Flutter` `WireGuard` `Samba` `Nmap` `Aircrack-ng` `Bash` `PowerShell` `Ollama` `Open WebUI` `ESP32` `Arduino`
 
 ## Portfolio structure
 
-- **Home:** concise professional overview and flagship work
-- **Evidence:** project status, measurable results, technologies and supporting technical notes
-- **GitHub:** selected public repositories will be added as projects are sanitised and documented
-
-> Security and confidentiality note: public material is intentionally sanitised. Credentials, private keys, personal data, sensitive infrastructure details, confidential project information and unnecessary offensive-lab specifics are not published.
+- **Home:** overview of my strongest technical work
+- **Evidence:** project notes, current system facts and measurable results
+- **GitHub:** selected project documentation and public code as it is prepared
 
 ---
 
-**Current focus:** strengthening the public evidence trail behind my infrastructure, software, security and automation work while continuing formal cybersecurity study.
+**Current focus:** Linux infrastructure, development automation, cybersecurity tooling and building stronger evidence around the systems I already run.
