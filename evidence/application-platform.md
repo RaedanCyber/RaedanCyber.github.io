@@ -1,40 +1,30 @@
-# Application Development Experience — Confidential Project Work
+# Application Development — Engineering Experience
 
-**Status:** Ongoing practical development experience  
-**Public disclosure level:** Skills and development methods only
+**Status:** Ongoing
 
-Some of my application-development work is covered by confidentiality obligations, so this portfolio does **not** identify the product, client, business domain, repository structure, feature set, codebase size, or internal implementation details.
+My application-development work has included practical experience across backend, mobile, source control, containers, testing and environment management.
 
-## Development areas I can publicly discuss
-
-My practical development experience includes work across:
+## Technologies and workflows
 
 - Java and Spring Boot backend development
-- Maven-based project workflows
+- Maven-based builds
 - REST/API concepts
 - SQL and relational-database work
-- Git-based source-control workflows
+- Git branches and source-control workflows
 - Docker and containerised development environments
-- Flutter/mobile development concepts
-- development/production environment separation
+- Flutter/mobile development workflows
 - application configuration and persistence
+- development and production-style environment separation
 - testing, review and build workflows
-- troubleshooting across application, database, container, network and Linux host layers
 
-## Engineering practices
+## Engineering habits
 
-The work has involved practical use of:
+The work has also involved:
 
-- component separation between frontend, backend and mobile/application layers
-- structured development workflows and branch-based source control
-- repeatable build and validation processes
-- containerised development services
-- environment-specific configuration
-- controlled promotion between development and production-style environments
-- technical documentation and review evidence
+- separating frontend, backend and mobile/application concerns
+- keeping development workflows repeatable
+- validating builds before promotion
+- working through problems across code, database, container, network and Linux host layers
+- documenting changes and review results
 
-## Confidentiality note
-
-Specific project names, business logic, product descriptions, screenshots, source code, internal architecture, endpoint details, database structures, customer information and other project-identifying material are intentionally excluded.
-
-The purpose of this page is to demonstrate the **development styles, technologies and engineering practices** I have worked with without disclosing confidential project information.
+This section focuses on the development methods and technologies I have worked with rather than any single application.
