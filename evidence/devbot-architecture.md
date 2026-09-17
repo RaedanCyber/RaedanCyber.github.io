@@ -1,101 +1,61 @@
-# AI Development Automation — Architecture Evidence
+# DevBot — Architecture Notes
 
-**Project status:** Ongoing development  
-**Evidence source:** Live read-only inspection of the development automation project on the self-hosted server.
+**Status:** Ongoing development
 
-## What the project is
+DevBot is a Python-based software-engineering control plane built to work across development projects with explicit boundaries around execution, validation, review and promotion.
 
-The project is a Python-based software-engineering control plane designed to inspect development projects, collect bounded evidence, plan work, validate results, review changes and stop for human review within explicit safety limits.
+## Current package
 
-The current package identifies itself as:
+- `devbot-control-plane`
+- Version **2.0.0**
+- Python **3.11+**
+- Bounded, resumable workflow design
 
-- **Name:** `devbot-control-plane`
-- **Version:** `2.0.0`
-- **Python requirement:** Python 3.11+
-- **Description:** "Bounded, resumable software-engineering control plane"
-
-## Current architecture
-
-The documented execution model is:
+## Workflow
 
 ```text
-CLI and explicit approvals
-  -> exact development-project path policy
-  -> component detection and trusted project adapters
-  -> bounded evidence/context preparation
-  -> CLASSIFY -> PLAN -> PREPARE -> IMPLEMENT -> VALIDATE -> REVIEW -> DECIDE
-                                              ^                    |
-                                              +---- correction ----+
-  -> BUILD -> BUILD_REVIEW -> REPORT -> WAIT_USER
+CLASSIFY -> PLAN -> PREPARE -> IMPLEMENT -> VALIDATE -> REVIEW -> DECIDE
+                                                ^                    |
+                                                +---- correction ----+
+-> BUILD -> BUILD_REVIEW -> REPORT -> WAIT_USER
 ```
 
-Cross-cutting controls include stop handling, process locking, usage locking, budgets, protected paths, rollback, event/state persistence and no-progress detection.
+The system also includes stop handling, process locking, usage locking, budgets, protected paths, rollback, event/state persistence and no-progress detection.
 
-## Safety design verified in the project documentation
+## Execution model
 
-The project documentation currently specifies that:
-
-- Normal development routes do not write to the production project tree.
-- Model output is not directly executed as shell commands.
-- Trusted adapters build `CommandSpec` objects using argument arrays with `shell=False`.
-- Subprocesses receive sanitised environments, timeout limits and bounded output.
-- `.env`, credential/key files and reserved evidence locations are protected.
+- Normal work routes stay inside the configured development project area.
+- Model responses are not passed directly to a shell.
+- Trusted adapters create command specifications using argument arrays with `shell=False`.
+- Subprocesses run with restricted environments, timeouts and capped output.
+- Protected files and paths are guarded from normal model-driven changes.
 - Structured writes are bounded, backed up and atomic.
-- Production promotion is exposed through an explicit non-AI promotion command rather than through normal AI work routes.
-- Multi-component promotion supports transactional rollback behaviour.
-- Provider usage and budget counters are updated under a cross-process lock.
+- Promotion is a separate explicit action rather than part of normal development work.
+- Multi-component promotion can roll back as one transaction when required.
+- Provider usage and budget counters are kept under a cross-process lock.
 
-## Project structure observed
+## Project structure
 
-The current project contains dedicated modules for areas including:
+The current project has dedicated modules for:
 
 - CLI handling
-- context preparation
-- memory
+- context and memory
 - evidence collection
-- adapters
+- project adapters
 - command runners
 - contracts
 - orchestration loop
 - usage accounting
 - configuration
 - release logic
-- state
-- reporting
+- state and reporting
 - providers
-- workflow
-- safety controls
+- workflow and safety controls
 
-It also includes documentation for architecture, configuration, migration, implementation, user guidance, acceptance criteria and local testing.
+## Tests
 
-## Test evidence
+The current test suite contains **7 Python test modules** covering foundations, workflow, loop logic, evidence/release behaviour, migration, project memory and model-usage display.
 
-The current `tests/` directory contains **7 Python test modules** covering areas such as:
+## Supported project families
 
-- foundations
-- workflow
-- loop logic
-- evidence and release behaviour
-- migration
-- project memory
-- model-usage display
-
-This count refers to test modules, not individual test cases.
-
-## Supported project families documented by the control plane
-
-The adapter design currently documents support for detecting and validating multiple project families, including:
-
-- Flutter
-- Maven/Java
-- Gradle/Java
-- Python/CLI
-- Node/frontend/Electron/CLI
-- static web
-- Tauri
-- .NET desktop
-- Docker/Compose metadata
-
-## Publication note
-
-This public document describes architecture and verified structure only. It intentionally excludes `.env` contents, provider keys, prompts, run history, private logs, usage records, copied project content and other sensitive runtime material.
+The adapter layer documents support for Flutter, Maven/Java, Gradle/Java, Python, Node/frontend, static web, Tauri, .NET and Docker/Compose metadata.
