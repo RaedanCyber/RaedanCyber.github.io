@@ -1,57 +1,40 @@
-# Application Platform — Verified Project Evidence
+# Application Development Experience — Confidential Project Work
 
-**Status:** Ongoing development  
-**Verification date:** 17 September 2026  
-**Evidence source:** Live read-only inspection of the development project on the self-hosted server.
+**Status:** Ongoing practical development experience  
+**Public disclosure level:** Skills and development methods only
 
-## Current project structure
+Some of my application-development work is covered by confidentiality obligations, so this portfolio does **not** identify the product, client, business domain, repository structure, feature set, codebase size, or internal implementation details.
 
-The project is organised into separate areas for:
+## Development areas I can publicly discuss
 
-- backend
-- frontend
-- mobile
-- reports
-- reviews
-- references
+My practical development experience includes work across:
 
-The currently inspectable mobile and backend areas contain real source, test and build configuration rather than placeholder documentation alone.
+- Java and Spring Boot backend development
+- Maven-based project workflows
+- REST/API concepts
+- SQL and relational-database work
+- Git-based source-control workflows
+- Docker and containerised development environments
+- Flutter/mobile development concepts
+- development/production environment separation
+- application configuration and persistence
+- testing, review and build workflows
+- troubleshooting across application, database, container, network and Linux host layers
 
-## Backend
+## Engineering practices
 
-The backend currently includes:
+The work has involved practical use of:
 
-- **Java 21**
-- **Spring Boot 3.3.x**
-- Maven project configuration
-- Spring Web dependency
-- Spring Boot Actuator
-- Docker Compose development definition
-- dedicated data and log volumes
-- `no-new-privileges` container security option
+- component separation between frontend, backend and mobile/application layers
+- structured development workflows and branch-based source control
+- repeatable build and validation processes
+- containerised development services
+- environment-specific configuration
+- controlled promotion between development and production-style environments
+- technical documentation and review evidence
 
-The current backend source tree contains **3 Java source files**, including the application entry point, a health controller and a category controller.
+## Confidentiality note
 
-## Mobile application
+Specific project names, business logic, product descriptions, screenshots, source code, internal architecture, endpoint details, database structures, customer information and other project-identifying material are intentionally excluded.
 
-The mobile application is a Flutter project described in its project metadata as a local-services marketplace with request-linked conversations.
-
-Current source evidence includes:
-
-- **47 Dart files** under `lib/`
-- **7 Dart test files** under `test/`
-- organised application, data, domain, theme, core and feature layers
-- Android, iOS, Linux, macOS, Windows and web target scaffolding
-- project architecture/migration documentation
-
-## Development automation evidence
-
-The project currently contains **6 generated report files** from automated development/review workflows. These reports provide a dated evidence trail of work and review activity without requiring publication of private runtime history.
-
-## Accuracy note
-
-This evidence page describes what is present in the current inspected project tree. It does not claim that every technology used historically remains present in the current build. In particular, the live backend Compose file inspected on 17 September 2026 does not define a PostgreSQL service, so PostgreSQL is not presented here as a verified dependency of this current snapshot.
-
-## Publication policy
-
-Source excerpts and screenshots will be added selectively after sanitisation. Credentials, private configuration, environment files and internal-only application data will not be published.
+The purpose of this page is to demonstrate the **development styles, technologies and engineering practices** I have worked with without disclosing confidential project information.
