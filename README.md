@@ -13,8 +13,8 @@ My work is centred on building real systems, troubleshooting them across layers,
 ### Self-Hosted Linux Infrastructure — Operational
 Ubuntu Server environment used for development, storage, networking, containerised services and remote administration. Practical work includes Docker, SSH, Linux users/groups and permissions, Samba, WireGuard, mounted storage and multi-user access design.
 
-### Application Development Platform — Ongoing
-Multi-component application work using **Java, Spring Boot, Maven, PostgreSQL, Git and Docker**, with practical experience across APIs, persistence, environment separation and deployment-oriented development workflows.
+### Application Development Experience — Ongoing
+Confidential project work has given me practical exposure to **Java, Spring Boot, Maven, SQL, Git, Docker and mobile/application development workflows**. Public material focuses on development methods and engineering practices rather than project names, product details or internal implementation.
 
 ### AI Development Automation — Ongoing
 Python-based development orchestration work involving project discovery, CLI workflows, model/provider routing, state management, controlled tool execution, reporting, evidence collection and pre-request quota enforcement.
@@ -30,16 +30,16 @@ Hands-on storage benchmarking, organisation and migration work across SSD/HDD sy
 
 ## Core technologies
 
-`Linux` `Ubuntu Server` `Kali Linux` `Python` `Java` `Spring Boot` `PostgreSQL` `SQL` `Git` `Docker` `Docker Compose` `WireGuard` `Samba` `Nmap` `Aircrack-ng` `Bash` `PowerShell` `Ollama` `Open WebUI` `ESP32` `Arduino`
+`Linux` `Ubuntu Server` `Kali Linux` `Python` `Java` `Spring Boot` `SQL` `Git` `Docker` `Docker Compose` `WireGuard` `Samba` `Nmap` `Aircrack-ng` `Bash` `PowerShell` `Ollama` `Open WebUI` `ESP32` `Arduino`
 
 ## Portfolio structure
 
-- **Home:** concise professional overview and flagship projects
+- **Home:** concise professional overview and flagship work
 - **Evidence:** project status, measurable results, technologies and supporting technical notes
 - **GitHub:** selected public repositories will be added as projects are sanitised and documented
 
-> Security note: public material is intentionally sanitised. Credentials, private keys, personal data, sensitive infrastructure details and unnecessary offensive-lab specifics are not published.
+> Security and confidentiality note: public material is intentionally sanitised. Credentials, private keys, personal data, sensitive infrastructure details, confidential project information and unnecessary offensive-lab specifics are not published.
 
 ---
 
-**Current focus:** strengthening the public evidence trail behind my infrastructure, software, security and automation projects while continuing formal cybersecurity study.
+**Current focus:** strengthening the public evidence trail behind my infrastructure, software, security and automation work while continuing formal cybersecurity study.
