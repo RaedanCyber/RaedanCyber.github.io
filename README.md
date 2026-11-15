@@ -8,10 +8,19 @@ I am currently completing an **NQF Level 5 Occupational Certificate in Cybersecu
 
 Most of my learning comes from building and operating things myself: servers, development tooling, security labs, automation systems and hardware projects.
 
+## Learning and completed courses
+
+My **NQF Level 5 Cybersecurity Occupational Certificate** at Zaio is in progress. I also complete standalone bootcamp courses that are not labeled as KM/PM occupational modules:
+
+- **Object Oriented Programming with Python** — Certificate of Completion, Premium Digital Education, 27 October 2026.
+- **SQL – A Practical Guide** — Certificate of Completion, Premium Digital Education, 15 November 2026.
+
+[Learning record: bootcamp courses, KM/PM and practical labs](https://raedancyber.github.io/learning.html)
+
 ## Featured work
 
 ### Self-Hosted Linux Infrastructure — Operational
-Ubuntu Server environment used for development, storage, networking, service hosting and remote administration. Work includes Docker, SSH, users/groups, permissions, Samba, WireGuard, mounted storage and multi-user access design.
+Ubuntu Server environment used for development, storage, networking, service hosting and remote administration. Hardware upgrade history: **Intel Core i3-7100 (2C/4T) → Intel Core i7-7700 (4C/8T)**, with 28 GB installed RAM, MSI H270 GAMING M3 motherboard and NVIDIA GT 710. Work includes Docker, SSH, permissions, Samba, WireGuard, mounted storage and multi-user access design.
 
 ### Application Development — Ongoing
 Practical work across **Java, Spring Boot, Maven, SQL, Git, Docker and Flutter/mobile workflows**, including APIs, persistence, testing, builds, source control and environment management.
